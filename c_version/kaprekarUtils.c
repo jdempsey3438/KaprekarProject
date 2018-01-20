@@ -1,4 +1,4 @@
-#include<math.h>
+#include <math.h> //need space between header and library
 
 #include "kaprekarUtils.h"
 
@@ -25,7 +25,7 @@
 int isKaprekar(int n) {
 
   if(n < 1) {
-    return false;
+    return 0; //need to return to 0
   }
 
   int i;
@@ -34,7 +34,7 @@ int isKaprekar(int n) {
   long modulus = 0;
   long first, second;
   for(i=1; i<=numberOfDigits; i++) {
-    modulous *= 10;
+    modulus *= 10;			//variable misspelled
     first = square / modulus;
     second = square % modulus;
     if(second > 0 &&
